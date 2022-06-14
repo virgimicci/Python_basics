@@ -7,7 +7,7 @@
 # Slicing con le liste, sintassi [start:stop:step] dove start indice iniziale (compreso), stop il finale che non è incluso
 # lo step di defoult è sempre uguale a 1 
 
-lista = ["Andrea", "Luca", "Michele", "Roberto"]
+lista = ["Andrea", "Lucdir()listaa", "Michele", "Roberto"]
 
 print(lista[2:4]) #lista dall elemento 2 al 3
 print(lista[::2]) # sarebbe tutta la lista con sep 2
@@ -16,7 +16,7 @@ print(lista[::2]) # sarebbe tutta la lista con sep 2
 # Attributi: danno info su un oggetto, non lo modificano
 # Metodi: modificano/fanno azioni su di essi
 
-print(dir(lista)) # Questa lista contiene tutti gli attributi e metodiche possiamo utilizzare suldata type liste
+print(dir(lista)) # Questa lista contiene tutti gli attributi e metodiche possiamo utilizzare sul datatype liste
 # ['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', 
 # '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', 
 # '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', 
@@ -45,7 +45,7 @@ lista.pop(1) # definendo l'indice posso scegliere quale elemento eliminare
 
 lista.remove("Luigi") # elimina solo un elemento alla volta
 
-# Keywork del, metodoalternativo per eliminare elementi in base all0indice
+# Keywork del, metodo alternativo per eliminare elementi in base all'indice
 del lista[0]
 # rispetto a .pop posso eliminare piu di un elementoalla volta
 
@@ -73,12 +73,18 @@ print(lista)
 print(lista_ordinata)
 # [3, 4, 22, 67]
 
-# Metodo copy -> crea una copia superficiale della nostra lista
+# crea una copia superficiale della nostra lista, questa funzione non sovrascrive 
+.copy()
 
 
+# .join() utilizza una lista come argomento, di solito, e restituisce una stringa
+# .split() restituisce una lista
 
+## Sovrascrvere elementi di una lista
 
+lista = [1, 30, 24, 0.1]
+lista[0] = 100
 
-
+lista[0:2] = ["primo", "secondo"] # sostituisco i primi due
 
 
